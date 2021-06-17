@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ConsumerServiceImpl implements IConsumerService {
+
     @Reference
+//    @Reference(version = "1.0.0", check = false, registry = "logistics")
     private IdubboService idubboService;
 
     @Override
